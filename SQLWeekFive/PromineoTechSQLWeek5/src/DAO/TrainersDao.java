@@ -31,7 +31,7 @@ public class TrainersDao {
 		List<Trainers> trainers = new ArrayList<Trainers>();
 		
 		while(rs.next()) {
-			trainers.add(listTrainers(rs.getInt(1), rs.getString(2)));
+			trainers.add(listTrainers(rs.getInt(1), rs.getString(4)));
 		}
 		return trainers;
 	}
